@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio · Diseño & Desarrollo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <div class="navbar__inner">
+        <a href="#" class="navbar__logo">MPTS<span>.</span></a>
+
+        <ul class="navbar__links" id="navLinks">
+          <li><a href="#sobre-mi" class="navbar__link">Sobre mí</a></li>
+          <li><a href="#skills" class="navbar__link">Tecnología</a></li>
+          <li><a href="#proyectos" class="navbar__link">Proyectos</a></li>
+          <li><a href="#Servicios" class="navbar__link">Servicios<a></li>
+          <li><a href="#contacto" class="navbar__link">Contacto</a></li>
+        </ul>
+
+        <div class="navbar__actions">
+          <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema"></button>
+          <div class="navbar__burger" id="burger" aria-label="Menú">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <section class="hero" id="inicio">
+    <div class="hero__bg">
+      <div class="hero__blob hero__blob--1"></div>
+      <div class="hero__blob hero__blob--2"></div>
+    </div>
+
+    <div class="container" style="width:100%">
+      <div class="hero__content">
+        <div class="hero__text">
+          <h1 class="hero__title">
+            MELANY TESILLO
+          </h1>
+          <div class="hero__tag">Desarrolladora Frontend</div>
+          <p class="hero__subtitle">
+            Creo experiencias digitales elegantes que conectan marcas con personas, combinando diseño visual y desarrollo frontend de alto nivel.
+          </p>
+          <div class="hero__ctas">
+           <a href="#proyectos" class="btn btn--primary">Ver proyectos →</a>
+             <a href="#contacto" class="btn btn--outline">Trabajemos juntos</a>
+
+              <!-- Ver CV -->
+             <a href="doc/cv.pdf" target="_blank" class="btn btn--outline">
+                Ver CV →
+             </a>
+
+              <!-- Descargar CV -->
+              <a href="doc/cv.pdf" download class="btn btn--primary">
+                Descargar CV ↓
+              </a>
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SOBRE MÍ
+  ============================================================ -->
+  <section class="section section--alt" id="sobre-mi">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__text reveal">
+          <span class="section__label">Sobre mí</span>
+          <h2 class="section__title">Pasión por el <em>detalle</em></h2>
+          <p>
+            Soy desarrolladora frontend apasionada por la creación de páginas web modernas, funcionales y visualmente atractivas. Me enfoco en transformar ideas en experiencias digitales intuitivas, utilizando buenas prácticas de diseño, rendimiento y usabilidad.
+          </p>
+          <p>
+            Me gusta trabajar en el diseño de interfaces limpias, responsivas y optimizadas para diferentes dispositivos, garantizando una excelente experiencia para el usuario final.
+          </p>
+         
+          
+          <div style="margin-top: var(--space-lg)">
+            <a href="#contacto" class="btn btn--primary">Hablemos →</a>
+          </div>
+        </div>
+
+        <div class="about__visual reveal">
+          <div class="about__photo-frame">
+            <img src="imagenes/image.png" alt="mi foto">
+            <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="40" cy="30" r="18" stroke="currentColor" stroke-width="2"/>
+              <path d="M10 72c0-16.569 13.431-30 30-30s30 13.431 30 30" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <div class="about__deco"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SKILLS
+  ============================================================ -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">Especialidades</span>
+        <h2 class="section__title">Mi conjunto de <em>habilidades</em></h2>
+        <p class="section__desc">Herramientas y tecnologías con las que construyo experiencias excepcionales.</p>
+      </div>
+
+      <div class="skills__grid">
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">🎨</div>
+          <div class="skill-card__name">UI/UX Design</div>
+          <div class="skill-card__desc">Figma, sistemas de diseño, prototipado, investigación de usuarios y arquitectura de información.</div>
+          <div class="skill-card__bar-wrap"><div class="skill-card__bar" data-width="0.95"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">💻</div>
+          <div class="skill-card__name">Frontend Dev</div>
+          <div class="skill-card__desc">HTML5, CSS3, JavaScript moderno, React y animaciones avanzadas con alta atención al detalle.</div>
+          <div class="skill-card__bar-wrap"><div class="skill-card__bar" data-width="0.90"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">✦</div>
+          <div class="skill-card__name">Identidad Visual</div>
+          <div class="skill-card__desc">Branding, logotipos, paletas de color, tipografías y guías de estilo para marcas coherentes.</div>
+          <div class="skill-card__bar-wrap"><div class="skill-card__bar" data-width="0.88"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">📐</div>
+          <div class="skill-card__name">Design Systems</div>
+          <div class="skill-card__desc">Creación de componentes reutilizables, tokens de diseño y documentación escalable.</div>
+          <div class="skill-card__bar-wrap"><div class="skill-card__bar" data-width="0.85"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">⚡</div>
+          <div class="skill-card__name">Motion Design</div>
+          <div class="skill-card__desc">Microinteracciones, transiciones, animaciones CSS y GSAP que dan vida a las interfaces.</div>
+          <div class="skill-card__bar-wrap"><div class="skill-card__bar" data-width="0.82"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">📱</div>
+          <div class="skill-card__name">Responsive Design</div>
+          <div class="skill-card__desc">Diseño adaptable mobile-first, accesibilidad web y optimización para todos los dispositivos.</div>
+          <div class="skill-card__bar-wrap"><div class="skill-card__bar" data-width="0.93"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROYECTOS
+  ============================================================ -->
+  <section class="section section--alt" id="proyectos">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">Portafolio</span>
+        <h2 class="section__title">Proyectos <em>destacados</em></h2>
+        <p class="section__desc">Una selección de trabajos que reflejan mi proceso creativo y enfoque técnico.</p>
+      </div>
+
+      <div class="projects__grid">
+        <div class="project-card reveal">
+          <div class="project-card__thumb">
+            <div class="project-card__thumb-text">01<img src="imagenes/park.png" alt="imagen del proyecto"></div>
+            <div class="project-card__badge">UI Design</div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__title">PARKPLATZ</div>
+            <div class="project-card__desc">Rediseño completo de plataforma de gestón: sistema de diseño, app móvil y dashboard de métricas para administradores y opradores.</div>
+            <div class="project-card__tags">
+              <span class="tag">HTML/CSS</span>
+              <span class="tag">JAVASCRIPT (Vanilla)</span>
+              <span class="tag">FIGMA</span>
+            </div>
+            <a href="https://github.com/emilymontec/PARKPLATZ" target="_blank" class="project-card__link">Repositorio <span>→</span></a>
+            <a href="https://parkplatz-mgm.vercel.app" target="_blank" class="project-card__link">Demo <span>→</span></a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-card__thumb" style="background: linear-gradient(160deg, #5a0229 0%, #C69294 100%)">
+            <div class="project-card__thumb-text">02 <img src="imagenes/siglo.png" alt="imagen del proyecto"></div>
+            <div class="project-card__badge">Dev + Design</div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__title">SIGLO</div>
+            <div class="project-card__desc">Sistema de gestión para modelos y terrenos urbanos. Diseño moderno, animaciones de scroll y experiencia inmersiva.</div>
+            <div class="project-card__tags">
+              <span class="tag">DJANGO</span>
+              <span class="tag">HTML/CSS</span>
+              <span class="tag">JAVASCRIPT (Vanilla)</span>
+            </div>
+            <a href="http://github.com/jailisita/SIGLO" target="_blank" class="project-card__link">Repositorio <span>→</span></a>
+            <a href="https://siglo.pythonanywhere.com/" target="_blank" class="project-card__link">Demo <span>→</span></a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-card__thumb" style="background: linear-gradient(160deg, #C69294 0%, #440120 100%)">
+            <div class="project-card__thumb-text">03<img src="imagenes/manjaresdelcampo.png" alt="imagen del proyecto"></div>
+            <div class="project-card__badge">UI Design</div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__title">MANJARES DEL CAMPO</div>
+            <div class="project-card__desc">Identidad visual completa para marca de productos agrícolas: logo, packaging, guía de marca y landing page de lanzamiento.</div>
+            <div class="project-card__tags">
+              <span class="tag">FIGMA</span>
+              <span class="tag">HTML/CSS</span>
+              <span class="tag">JAVASCRIPT (Vanilla)</span>
+            </div>
+            <a href="https://github.com/jailisita/MANJARES-CAMPO" target="_blank" class="project-card__link">Repositorio <span>→</span></a>
+            <a href="https://manjarescampo.pythonanywhere.com" target="_blank" class="project-card__link">Demo <span>→</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       EXPERIENCIA
+  ============================================================ -->
+  <section class="section" id="Servicios">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">Especialidades</span>
+        <h2 class="section__title"><em>Servicios</em></h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline__item reveal">
+          <div class="timeline__dot-wrap"><div class="timeline__dot"></div></div>
+          <div class="timeline__content">
+            <!-- <div class="timeline__period">2021 — 2023</div> -->
+            <div class="timeline__title">Desarrollo de Landing Pages</div>
+            <!-- <div class="timeline__company">Agencia Pixel Co. · Medellín, Colombia</div> -->
+            <div class="timeline__desc">Desarrollo de interfaces web modernas, atractivas y optimizadas para conversión.</div>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal">
+          <div class="timeline__dot-wrap"><div class="timeline__dot"></div></div>
+          <div class="timeline__content">
+            <!-- <div class="timeline__period">2021 — 2023</div> -->
+            <div class="timeline__title">Diseño Web Responsive</div>
+            <!-- <div class="timeline__company">Agencia Pixel Co. · Medellín, Colombia</div> -->
+            <div class="timeline__desc">Sitios adaptables a móviles, tablets y escritorio con experiencia fluida.</div>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal">
+          <div class="timeline__dot-wrap"><div class="timeline__dot"></div></div>
+          <div class="timeline__content">
+            <!-- <div class="timeline__period">2021 — 2023</div> -->
+            <div class="timeline__title">Personalización con Wordpress</div>
+            <!-- <div class="timeline__company">Agencia Pixel Co. · Medellín, Colombia</div> -->
+            <div class="timeline__desc">Desarrollo y edicion de sitios en WordPress con Elementor.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACTO
+  ============================================================ -->
+  <section class="section section--alt" id="contacto">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">Contacto</span>
+        <h2 class="section__title">¿Tienes un <em>proyecto</em>?</h2>
+        <p class="section__desc">Me encantaría escuchar tus ideas. Escríbeme y construyamos algo hermoso juntas.</p>
+      </div>
+
+      <div class="contact__wrapper reveal">
+        <div class="contact__social">
+
+  <!-- GitHub -->
+      <a href="https://github.com/mptse"
+       target="_blank"
+       class="contact-icon"
+       data-tooltip="GitHub">
+       <i class="devicon-github-original"></i>
+     </a>
+
+     <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/mptse"
+      target="_blank"
+      class="contact-icon"
+      data-tooltip="LinkedIn">
+    <i class="devicon-linkedin-plain"></i>
+  </a>
+
+      <!-- WhatsApp -->
+  <!-- WhatsApp -->
+<a href="https://wa.me/573114183412"
+   target="_blank"
+   class="contact-icon"
+   data-tooltip="WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+   </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__logo">Melany T.</div>
+      <div class="footer__tagline">Diseñadora & Desarrolladora Frontend</div>
+      <div class="footer__links">
+        <a href="#sobre-mi" class="footer__link">Sobre mí</a>
+        <a href="#proyectos" class="footer__link">Proyectos</a>
+        <a href="#Servicios" class="footer__link">Servicios</a>
+        <a href="#contacto" class="footer__link">Contacto</a>
+      </div>
+      <div class="footer__divider"></div>
+      <div class="footer__copy">© 2026 MPTS. · Todos los derechos reservados.</div>
+    </div>
+  </footer>
+
+<script src="./script.js"></script>
+
+</body>
+</html>
